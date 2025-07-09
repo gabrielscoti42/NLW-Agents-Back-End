@@ -1,0 +1,12 @@
+services: 
+  nlw-agents-pg:
+    image: pgvector/pgvector:pg17 #Usa a imagem do pgvector com PostgreSQL 17, suporte a busca semântica/vetorial
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: agents
+    ports:
+      - "5432:5432" # Mapeia a porta 5432 do container (minha máquina) para a porta 5432 do docker host
+    volumes: 
+      - ./docker/setup.sql:/docker-entrypoint-initdb.d/setup.sql # Executa o script de setup ao iniciar o container
+      
