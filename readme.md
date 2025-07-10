@@ -1,0 +1,1 @@
+tecnologias: node.js com fastify, zod, docker e postgresql
