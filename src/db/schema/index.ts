@@ -1,8 +1,10 @@
 // Barrel File (reexporta todas as tabelas do schema)
-import { rooms } from './rooms.ts'
-import { questions } from './questions.ts'
+import { rooms } from "./rooms.ts";
+import { questions } from "./questions.ts";
+import { audioChunks } from "./audio-chunks.ts";
 
 export const schema = {
-    rooms,
-    questions,
-}
+  rooms,
+  questions,
+  audioChunks,
+};
