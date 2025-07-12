@@ -19,8 +19,8 @@ POST {{baseURL}}/rooms
 Content-Type: application/json
 
 {
-    "name": "sala",
-    "description": "oiii"
+    "name": "Minha Sala de Aula",
+    "description": "Sala para testes da aplicação"
 }
 
 ###
@@ -40,5 +40,5 @@ POST {{baseURL}}/rooms/{{roomId}}/questions
 Content-Type: application/json
 
 {
-    "question": "queeeee???????"
+    "question": "Qual é o tema principal desta aula?"
 }

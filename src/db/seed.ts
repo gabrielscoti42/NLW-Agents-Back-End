@@ -21,5 +21,3 @@ await seed(db, schema).refine((f) => {
 });
 
 await sql.end();
-
-console.log("DB Seeded");
